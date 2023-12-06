@@ -1,0 +1,46 @@
+EXAMPLE CODE:
+
+# ungrouped Hosts
+ 10.128.0.2
+ 10.142.0.2
+
+# grouped web server
+ [webserverprod]
+ 10.142.0.7
+
+ [webserverprod:vars]
+ ansible_user=root
+ ansible_password=toor
+
+# grouped web dev server
+ [webdevserver]
+ 10.188.0.2
+
+ [webdevserver:vars]
+ ansible_user=root
+ ansible_password=too
+
+
+COPY THIS PART INTO YOUR FILE:
+	1. FILL IT IN ALL IP'S ARE THE INTERNAL ADRESS OF EACH SERVER
+	2. YOU MAY MAKE THE PASSWORD WHAT EVER YOU WISH JUST REMEMBER IT FOR LATER AS YOU WILL NEED IT ON THE OTHER SERVERS
+
+
+# ungrouped Hosts
+ ip adress of any server thats not being used for this project
+
+# grouped web server
+ [webserverprod]
+ internal ip of web server
+
+ [webserverprod:vars]
+ ansible_user=root
+ ansible_password=PASSWORD
+
+# grouped web dev server
+ [webdevserver]
+ internal ip of dev server
+
+ [webdevserver:vars]
+ ansible_user=root
+ ansible_password=PASSWORD

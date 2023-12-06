@@ -156,3 +156,51 @@ sudo nano hosts
 cd
 clear
 sudo nano /etc/ssh/sshd_config 
+ls
+cat main.sh
+clear
+ls
+cd ansible_playbooks/
+ls
+cat installn
+cat installnodejsandapachewebserver.yml 
+cat installmariadbandapacheandnodejswebdevserver.yml 
+cat webserverupdating.yml 
+rm webserverupdating.yml 
+ls
+sudo nano installnodejsandapachewebserver.yml 
+sudo nano installmariadbandapacheandnodejswebdevserver.yml 
+cd
+sudo nano devindex.sh
+sudo nano webindex.sh
+ls
+sudo nano devindex.sh
+sudo nano webindex.sh
+sudo nano devindex.sh
+clear
+ls
+cat main.sh
+cd ansible_playbooks/`
+ls
+clear
+cd ansible_playbooks/
+ls
+cd
+clear
+git remote add origin git@github.com:BHBarlow/DevOpsFinal.git
+git init
+git status
+git add .
+git status
+git commit -m "FINAL PROJECT"
+git config --global user.email "bhbarlow42@tntech.edu"
+git config --global user.name "BHBarlow"
+git commit -m "FINAL PROJECT"
+git remote add origin git@github.com:BHBarlow/DevOpsFinal.git
+git push -u orgin master
+git push -u origin master
+ls
+cat devindex.sh 
+cat webindex.sh 
+cat main.sh 
+clear
