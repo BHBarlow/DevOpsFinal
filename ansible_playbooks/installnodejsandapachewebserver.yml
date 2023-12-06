@@ -1,0 +1,24 @@
+---
+  - name: Apache/NodeJS->Install
+    hosts: webserverprod
+    tasks:
+      - name: Install Apache
+        apt:
+          name: apache2
+          state: latest
+
+      - name: install node js
+        apt:
+          name: nodejs
+          state: latest
+
+      - name: cloneing git pull script to we server        
+        copy:
+          src: "~/webindex.sh"  
+          dest: "~/webinsdex.sh"
+          owner: root  
+          group: root  
+          mode: "0755"
+
+      - name: Running script pull from git  
+        ansible.builtin.script: ~/webindex.sh
